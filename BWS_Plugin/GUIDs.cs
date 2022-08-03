@@ -21,9 +21,7 @@ namespace BWS_Plugin
         public string ADSK_PRIM = "a85b7661-26b0-412f-979c-66af80b4b2c3"; //Примечание 
         public string ADSK_OBOZ = "9c98831b-9450-412d-b072-7d69b39f4029"; //Обозначение 
         public string ADSK_TOLSTENKI = "381b467b-3518-42bb-b183-35169c9bdfb3";//Толщина стенки
-        public string BRU_Cabel = "37ed1cf0-fd7c-41c6-a121-5f2b1cd160bd";//BRU_Кабель
-        public string BRU_SposobProkladki = "47de5ad2-6bb2-4baf-9e43-d60589ee6a4e";//BRU_Способ прокладки
-        public string BRU_RazdelElementa = "236b528f-3d8b-4863-9b77-8341774f5ca0";//BRU_Раздел элемента
+        
 
         //Параметры для штампов
         public string ADSK_FAM1 = "a856a784-03da-4238-9bd9-9881b9938b8a";
