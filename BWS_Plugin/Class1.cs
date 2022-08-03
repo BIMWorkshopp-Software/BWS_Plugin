@@ -8,6 +8,6 @@ namespace BWS_Plugin
 {
     public class Class1
     {
-
+        //проверка синхронизации
     }
 }
