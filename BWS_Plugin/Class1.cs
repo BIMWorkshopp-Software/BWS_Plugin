@@ -8,10 +8,6 @@ namespace BWS_Plugin
 {
     public class Class1
     {
-        //проверка синхронизации
-        private int i = 10;
-        int j = 20;//ljhghl
-        private double d = 202;
-        //hello
+        
     }
 }
