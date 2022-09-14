@@ -3,24 +3,29 @@ using Autodesk.Revit.UI;
 using BWS_Plugin.Properties;
 using BWS_Plugin;
 
-
-
-public class MainPanel : IExternalApplication
+namespace BWS_Plugin
 {
-    public Result OnStartup(UIControlledApplication a)
+    internal class MainPanel : IExternalApplication
     {
-        Ribbon.GetApplicationRibbon(a)
-            .Tab("BWS").Panel("Плагины")
-            .CreateButton<Test>("Info", "Info", b => 
-            b.SetLargeImage(Resources.BWS_Logo_32)
-            .SetSmallImage(Resources.BWS_Logo_16)
-            .SetLongDescription("Информация о плагинах Bim Workshopp")           
-            );
+        public Result OnStartup(UIControlledApplication a)
+        {
+            Ribbon.GetApplicationRibbon(a)
+                .Tab("BWS").Panel("Плагины")
+                .CreateButton<Test>("Info", "Info", b =>
+                b.SetLargeImage(Resources.BWS_Logo_32)
+                .SetSmallImage(Resources.BWS_Logo_16)
+                .SetLongDescription("Информация о плагинах Bim Workshopp")
+                );
 
-        return Result.Succeeded;
-    }
-    public Result OnShutdown(UIControlledApplication a)
-    {
-        return Result.Succeeded;
+            return Result.Succeeded;
+        }
+        public Result OnShutdown(UIControlledApplication a)
+        {
+            return Result.Succeeded;
+        }
     }
 }
+    
+
+
+

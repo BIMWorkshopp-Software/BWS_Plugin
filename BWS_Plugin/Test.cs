@@ -18,7 +18,7 @@ namespace BWS_Plugin
             var uidoc = uiapp.ActiveUIDocument;
             var doc = uidoc.Document;
 
-            //Основной код плагина
+            TaskDialog.Show("BWS", "Здесь был Юрец!");
 
             return Result.Succeeded;
         }
