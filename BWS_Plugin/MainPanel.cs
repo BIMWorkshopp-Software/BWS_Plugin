@@ -5,7 +5,7 @@ using BWS_Plugin;
 
 
 
-internal class MainPanel : IExternalApplication
+public class MainPanel : IExternalApplication
 {
     public Result OnStartup(UIControlledApplication a)
     {
