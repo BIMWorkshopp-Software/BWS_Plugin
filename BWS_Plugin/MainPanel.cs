@@ -14,8 +14,13 @@ namespace BWS_Plugin
                 .CreateButton<Test>("Info", "Info", b =>
                 b.SetLargeImage(Resources.BWS_Logo_32)
                 .SetSmallImage(Resources.BWS_Logo_16)
-                .SetLongDescription("Информация о плагинах Bim Workshopp")
-                );
+                .SetLongDescription("Информация о плагинах Bim Workshopp")                
+                )
+                .CreateButton<SetParameterToVisibleElementInView_Code>("SetParam","Запись параметра", b =>
+                 b.SetLargeImage(Resources.SetParameterToElemInVisibleView_32)
+                .SetSmallImage(Resources.SetParameterToElemInVisibleView_16)
+                .SetLongDescription("Команда записывает во все элементы видимые на текущем виде значение из формы"))
+                ;
 
             return Result.Succeeded;
         }

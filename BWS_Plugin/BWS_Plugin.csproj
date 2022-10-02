@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="RevitAPI">
       <HintPath>..\..\..\Program\Revit 2021\RevitAPI.dll</HintPath>
       <Private>False</Private>
@@ -44,6 +45,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +55,7 @@
     <Reference Include="VCRevitRibbonUtil">
       <HintPath>..\..\..\YandexDisk\02_ПРОГРАММИРОВАНИЕ\VCRevitRibbonUtil.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\AllUsedCategoryList.cs" />
@@ -65,6 +68,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SetParameterToVisibleElementInView\SetParameterToVisibleElementInView_Code.cs" />
+    <Compile Include="SetParameterToVisibleElementInView\SetParameterToVisibleElementInView_Form.xaml.cs">
+      <DependentUpon>SetParameterToVisibleElementInView_Form.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,9 +82,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BWS_Logo_16.png" />
+    <None Include="Resources\Setings.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BWS_Logo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="SetParameterToVisibleElementInView\SetParameterToVisibleElementInView_Form.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetParameterToElemInVisibleView_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetParameterToElemInVisibleView_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

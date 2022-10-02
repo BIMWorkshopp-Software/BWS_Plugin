@@ -79,5 +79,25 @@ namespace BWS_Plugin.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SetParameterToElemInVisibleView_16 {
+            get {
+                object obj = ResourceManager.GetObject("SetParameterToElemInVisibleView_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SetParameterToElemInVisibleView_32 {
+            get {
+                object obj = ResourceManager.GetObject("SetParameterToElemInVisibleView_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
